@@ -12,3 +12,9 @@
 --CORRECT ANSWER
 
 SELECT * FROM users WHERE status = true;
+
+-- Exercise: Select all products from the products table that are not featured.
+
+--CORRECT ANSWER
+
+SELECT * FROM productos WHERE destacado = false;
