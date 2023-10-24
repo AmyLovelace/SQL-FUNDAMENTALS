@@ -13,3 +13,7 @@
 --CORRECT ANSWER
 
 SELECT * FROM products WHERE name = 'Trousers';
+
+--QUERYS ARE CASE SENSITIVE
+
+SELECT * FROM products WHERE name = 'Silla de Oficina';
