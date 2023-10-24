@@ -15,3 +15,11 @@
 --CORRECT ANSWER:
 
 SELECT * FROM users WHERE last_name LIKE 'Ma%';
+
+-- Exercise:
+
+-- Select all users from the users table whose name ends with the letter 'o'
+
+--CORRECT ANSWER:
+
+SELECT * FROM users WHERE name LIKE '%o';
