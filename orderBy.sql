@@ -18,4 +18,9 @@
 -- Sorts the records in the users table by the 'name' field
 
 --CORRECT ANSWER
+--ascendente
 SELECT * FROM users ORDER BY name;
+
+--desendente
+SELECT precio FROM productos ORDER BY precio DESC;
+
