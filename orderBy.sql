@@ -24,3 +24,21 @@ SELECT * FROM users ORDER BY name;
 --desendente
 SELECT precio FROM productos ORDER BY precio DESC;
 
+-- Order combinations
+-- In some situations we will want to sort based on multiple columns. For example, if we want to obtain a list of all the products ordered by their stock and then by their color, we can select all the fields in the table and sort them first by the stock field and then by the color field as follows:
+
+-- SELECT * FROM products ORDER BY stock ASC, color ASC
+
+-- Exercise:
+-- You have the employees table with the following information:
+
+-- ID NAME SALARY
+-- 1 Juan Pérez 4800
+-- 2 María López 5500
+-- 3 Pedro García 5500
+-- 4 Ana Martínez 5500
+-- 5 Luis Rodríguez 4800
+-- Select a list of all employees sorted by salary and name.
+
+
+SELECT * FROM employees ORDER BY ASC salary, ASC name;
