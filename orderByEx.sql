@@ -8,3 +8,11 @@
 
 -- CORRECT ANSWER:
 SELECT * FROM employees ORDER BY salary;
+
+-- In this exercise, we will not learn any new instructions, you will only be asked to sort a table by a specific column and observe how null values ​​are sorted.
+
+-- Exercise
+-- Sorts the employees table by the 'salary' column in ascending order.
+
+
+SELECT * FROM employees ORDER BY salary;
