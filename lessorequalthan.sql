@@ -6,4 +6,4 @@
 
 --CORRECT ANSWER:
 
-SELECT * FROM productos WHERE precio <= 100;
+SELECT * FROM productos WHERE precio <= 100
