@@ -61,3 +61,29 @@ SELECT amount, strftime('%Y', sales_date) as sales_year FROM sales;
 -- 10 275 2019-10-11
 
 SELECT amount, strftime('%Y-%m',sales_date) as 'year-month' FROM sales;
+
+-- Extractions and where
+-- Previously we learned to filter using a date as a parameter. Now we will use what we have learned to filter dates of a specific year or month.
+
+-- You have the sales table with the following information:
+
+-- SALES_ID AMOUNT SALES_DATE
+-- 1 200 2010-01-15
+-- 2 150 2011-02-20
+-- 3 300 2012-03-10
+-- 4 250 2013-04-05
+-- 5 100 2014-05-25
+-- 6 350 2015-06-18
+-- 7 400 2015-07-22
+-- 8 180 2015-08-09
+-- 9 220 2018-09-30
+-- 10 275 2019-10-11
+-- They ask us to show all the sales for the year 2012. For this we will use the strftime function to extract the year from the dates, and then we will filter by the indicated year:
+
+-- SELECT * FROM sales WHERE strftime('%Y', sales_date) = '2012';
+
+-- Exercise:
+-- Given a sales table with the columns amount and sales_date, select all the sales information for 2015
+
+
+SELECT * FROM sales WHERE strftime('%Y', sales_date) = '2015' ;
