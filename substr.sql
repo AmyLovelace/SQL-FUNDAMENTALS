@@ -18,3 +18,9 @@
 
 
 SELECT SUBSTR(last_name,1,3) as first_letters FROM users;
+
+-- Selecting characters
+-- There is a table of users with the first and last name columns. Using the SUBSTR() function, select 3 characters from María's last name, starting from the second character. Assigns the alias 'three_characters_of_last_name' to the created column.
+
+
+SELECT SUBSTR(lastname,2,3) as three_characters_of_lastname FROM users WHERE name = 'Mary';
