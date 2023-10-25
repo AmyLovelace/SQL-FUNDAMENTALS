@@ -37,3 +37,27 @@
 -- Given a sales table with the columns amount and sales_date, create a query that shows only the amount and year of the sale. The column that shows the year of the sale should be called sales_year
 
 SELECT amount, strftime('%Y', sales_date) as sales_year FROM sales;
+
+-- Month and year extraction
+-- We already learned how to extract the month and year from a date. However, how could we extract both data into a single column?
+
+-- To extract both the month and year of a date into a single column, you can use the strftime('%Y-%m') function. This will allow you to get a result in the "year-month" format. Let's look at an example using a sales table:
+
+-- Exercise
+-- Given the sales table with the columns amount and sales_date, create a query that displays the following two columns:
+
+-- Amount
+-- The month and year of the sale date. This column should be called year-month
+-- SALES_ID AMOUNT SALES_DATE
+-- 1 200 2010-01-15
+-- 2 150 2011-02-20
+-- 3 300 2012-03-10
+-- 4 250 2013-04-05
+-- 5 100 2014-05-25
+-- 6 350 2015-06-18
+-- 7 400 2015-07-22
+-- 8 180 2015-08-09
+-- 9 220 2018-09-30
+-- 10 275 2019-10-11
+
+SELECT amount, strftime('%Y-%m',sales_date) as 'year-month' FROM sales;
