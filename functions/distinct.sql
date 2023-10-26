@@ -101,3 +101,43 @@ SELECT DISTINCT strftime('%m', sales_date) as unique_month FROM sales
 
 
 SELECT COUNT(DISTINCT email) AS emails_quant FROM users;
+
+-- Distinct with multiple columns
+-- We can use DISTINCT with more than one column to get unique combinations of those columns. Suppose you have a table called employees with the columns department and position.
+
+-- For this example we will work with the following table employees
+
+-- EMPLOYEE_ID NAME DEPARTMENT POSITION
+-- 1 Juan Sales Seller
+-- 2 Maria Sales Seller
+-- 3 Carlos IT Developer
+-- 4 Ana IT Developer
+-- 5 Luis Sales Manager
+-- 6 Carmen IT Manager
+-- 7 José IT Developer
+-- 8 Francisco Sales Seller
+-- We can then get all the unique combinations of Department and Position using the following query:
+
+-- SELECT DISTINCT department, position FROM employees;
+
+-- With this we will obtain the following resulting table.
+
+-- DEPARTMENT POSITION
+-- Sales Seller
+-- IT Developer
+-- Sales Manager
+-- IT Manager
+-- Exercise
+-- For the following table "products" we want to obtain all the unique combinations of "Category" and "Price"
+
+-- NAME CATEGORY PRICE
+-- Electronic Laptop 1000
+-- Electronic Telephone 500
+-- T-shirt Clothing 20
+-- Pants Clothing 40
+-- Headphones Electronics 50
+-- Book Books 15
+-- Backpack Accessories 30
+
+
+SELECT DISTINCT Category, Price FROM products;
