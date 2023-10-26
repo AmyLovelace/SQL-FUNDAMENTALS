@@ -28,3 +28,25 @@
 
 
 SELECT DISTINCT color AS unique_color FROM colors;
+
+-- Selecting unique emails
+-- Exercise
+-- Given the following table of users
+
+-- MAIL
+-- juan.perez@empresa.com
+-- maria.gonzalez@empresa.com
+-- carlos.rodriguez@empresa.com
+-- ana.martinez@empresa.com
+-- luis.garcia@empresa.com
+-- carmen.lopez@empresa.com
+-- jose.hernandez@empresa.com
+-- francisco.martin@empresa.com
+-- laura.sanchez@empresa.com
+-- antonio.diaz@empresa.com
+-- juan.perez@empresa.com
+-- maria.gonzalez@empresa.com
+-- Create a query that shows us each email only once. The column shown must be called single_mail
+
+
+SELECT DISTINCT email as single_mail FROM users;
