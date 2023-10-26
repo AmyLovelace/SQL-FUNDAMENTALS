@@ -16,3 +16,23 @@
 
 
 SELECT SUM(salary) FROM employees WHERE age > 27;
+
+-- Exercise 2: Aggregation functions with where
+-- Exercise
+-- Using the employees table, calculate the average salaries of all people who earn more than 50,000
+
+-- EMAIL NAME AGE SALARY
+-- juan.perez@workmail.com Juan Pérez 30 50,000
+-- maria.gonzalez@corp.com Maria González 25 55,000
+-- john.doe@techplace.org John Doe 40 60,000
+-- francisco@startup.io Francisco 22 45,000
+-- Tip: They have to earn strictly more than 50,000.
+
+
+SELECT AVG(salary) FROM employees WHERE salary > 50000 ORDER BY salary DESC;
+
+SELECT COUNT(*) FROM empleados WHERE Departamento = 'Marketing';
+
+SELECT COUNT(*) FROM empleados WHERE Departamento = 'Finanzas' OR Departamento = 'Marketing' ;
+
+SELECT COUNT(*) FROM usuarios WHERE nombre LIKE '%a'
