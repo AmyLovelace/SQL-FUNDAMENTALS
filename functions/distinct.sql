@@ -80,3 +80,24 @@ SELECT DISTINCT email as single_mail FROM users;
 
 
 SELECT DISTINCT strftime('%m', sales_date) as unique_month FROM sales
+
+-- Exercise
+-- Given the following table of users
+
+-- MAIL
+-- juan.perez@empresa.com
+-- maria.gonzalez@empresa.com
+-- carlos.rodriguez@empresa.com
+-- ana.martinez@empresa.com
+-- luis.garcia@empresa.com
+-- carmen.lopez@empresa.com
+-- jose.hernandez@empresa.com
+-- francisco.martin@empresa.com
+-- laura.sanchez@empresa.com
+-- antonio.diaz@empresa.com
+-- juan.perez@empresa.com
+-- maria.gonzalez@empresa.com
+-- Create a query to answer how many unique emails exist in the table. The resulting column should be called qty_mail
+
+
+SELECT COUNT(DISTINCT email) AS emails_quant FROM users;
