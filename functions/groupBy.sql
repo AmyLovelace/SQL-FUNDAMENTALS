@@ -29,3 +29,13 @@ SELECT color as unique_color FROM colors GROUP BY color
 
 -- 1
 SELECT email as single_mail FROM users GROUP BY email;
+
+-- Group and count
+-- GROUP BY is commonly used in conjunction with aggregation functions such as COUNT, MAX, MIN, SUM, and AVG to obtain summary information about a data set.
+
+-- In this exercise we will learn to group and count.
+
+-- Create a query that shows us each email only once along with the number of repetitions. The columns should be called mail and repeats.
+
+
+SELECT mail, COUNT(mail) as repetitions FROM users GROUP BY mail
