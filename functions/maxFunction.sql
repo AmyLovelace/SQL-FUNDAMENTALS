@@ -27,3 +27,5 @@
 
 
 SELECT MAX(age) FROM employees;
+
+SELECT MIN(sueldo) FROM empleados;
