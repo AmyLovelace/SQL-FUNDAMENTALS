@@ -1,3 +1,7 @@
 # SQL EXERCISES 
 # 1° :READ THE DESCRIPTION 
 # 2°:NOW LOOK HOW THE SCRIPT IS CONSTRUCTED
+
+FROM SQL COURSE : 
+
+https://sqlinteractivo.desafiolatam.com/
