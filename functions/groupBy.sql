@@ -61,3 +61,8 @@ SELECT mail, COUNT(mail) as repetitions FROM users GROUP BY mail;
 
 1
 SELECT department, COUNT( department) as number_employees FROM employees GROUP BY department;
+
+-- Exercise
+-- Using the following company sales table, create a query that shows how much was sold in total for each category. The query columns must be named category and total_amount
+
+SELECT category,SUM(amount) AS total_amount FROM sales GROUP BY category;
