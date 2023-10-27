@@ -38,4 +38,26 @@ SELECT email as single_mail FROM users GROUP BY email;
 -- Create a query that shows us each email only once along with the number of repetitions. The columns should be called mail and repeats.
 
 
-SELECT mail, COUNT(mail) as repetitions FROM users GROUP BY mail
+SELECT mail, COUNT(mail) as repetitions FROM users GROUP BY mail;
+
+-- Given the following table employees
+
+-- FIRST LAST NAME SALARY DEPARTMENT
+-- Juan Pérez 3000 Sales
+-- María González 3500 Marketing
+-- Carlos Rodríguez 4000 Technology
+-- Ana Martínez 2800 Human Resources
+-- Luis García 3200 Finance
+-- Carmen López 3100 Administration
+-- José Hernández 2900 Operations
+-- Francisco Martín 3400 Legal
+-- Laura Sánchez 3300 Shopping
+-- Antonio Díaz 3600 Production
+-- Sofia Ruiz 2750 Sales
+-- Jorge Vargas 3900 Technology
+-- Elena Castro 3050 Marketing
+-- Pedro Ortega 3150 Finance
+-- You are asked to count how many people work in each department. The resulting columns should be named department and number_employees
+
+1
+SELECT department, COUNT( department) as number_employees FROM employees GROUP BY department;
