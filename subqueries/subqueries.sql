@@ -104,3 +104,23 @@ SELECT * FROM employees WHERE salary > (SELECT MAX(salary) FROM employees WHERE 
 
 
 SELECT * FROM notes WHERE notes > (SELECT AVG(notes) FROM notes)
+
+-- Subqueries with IN part 3
+-- Exercise
+-- You have a patient table
+
+-- PATIENT_ID NAME
+-- 1 Robert
+-- 2 Carmen
+-- 3 Luisa
+-- 4 Stephen
+-- You have a query table
+
+-- PATIENT_ID CONSULTATION_DATE
+-- 1 2023-05-10
+-- 2 2023-05-15
+-- 3 2023-05-20
+-- 4 2023-05-25
+-- It is requested to obtain the names of all patients who had their last consultation before May 16, 2023. The column must be called patient_names.
+
+SELECT name as patient_names from patients WHERE patient_id IN (SELECT patient_id from queries WHERE query_date < '2023-05-16' )
