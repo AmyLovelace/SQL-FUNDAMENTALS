@@ -26,3 +26,8 @@ UNION
 SELECT email
 FROM clients
 GROUP BY email;
+
+SELECT * FROM 
+empleados1 
+UNION ALL SELECT
+ * FROM empleados2;
