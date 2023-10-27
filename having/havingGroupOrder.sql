@@ -29,3 +29,17 @@
 
 
 SELECT product, SUM(quantity) AS total_quantity FROM sales GROUP BY product HAVING SUM(quantity) > 1000 ORDER BY total_quantity DESC;
+
+-- Having and order 2
+-- Exercise
+-- Suppose you have a table of employees with the following data:
+
+-- EMPLOYEE_ID DEPARTMENT NAME SALARY
+-- 1 Juan Sales 3000
+-- 2 Maria Marketing 3500
+-- 3 Carlos Sales 4000
+-- 4 Ana Marketing 2800
+-- 5 Luis Sales 3200
+-- Your task is to write an SQL query that returns the departments whose average salary is greater than 3000, ordered from highest to lowest average salary. The results should show the department name and average salary, with the column names as Department and Average_Salary respectively.
+
+SELECT department, AVG(salary) as Average_Salary FROM employees GROUP BY department HAVING Average_Salary > 3000 ORDER BY Average_Salary DESC;
