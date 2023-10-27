@@ -61,3 +61,23 @@ WHERE student_id IN (SELECT student_id from notes)
 
 
 SELECT nombre from estudiantes WHERE student_id IN (SELECT student_id from averages WHERE average_grades > 50)
+
+-- Subqueries with IN part 2
+-- Exercise
+-- You have the books table
+
+-- BOOK_ID NAME
+-- 1 The Odyssey
+-- 2 One Hundred Years of Solitude
+-- 3 The Little Prince
+-- 4 Moby Dick
+-- And you have the ratings table
+
+-- BOOK_ID AVERAGE_RATING
+-- 1 4.5
+-- 2 4.7
+-- 3 4.2
+-- 4 3.9
+-- Create a query that displays all titles with average_rating > 4. The resulting column should be named selected_names.
+
+SELECT name as selected_names from books WHERE book_id IN (SELECT book_id from ratings WHERE average_rating > 4)
